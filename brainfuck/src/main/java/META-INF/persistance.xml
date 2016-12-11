@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="http://java.sun.com/xml/ns/persistence/orm"
+        version="2.0">
+
+    <entity class="net.ahramionok.model.Project">
+        <table name="project" schema="brainfuckide" catalog=""/>
+        <attributes>
+            <id name="idProject">
+                <column name="id_project" precision="10"/>
+            </id>
+            <basic name="idUser">
+                <column name="id_user" precision="10"/>
+            </basic>
+            <basic name="projectName">
+                <column name="project_name" length="50"/>
+            </basic>
+            <basic name="projectContent">
+                <column name="project_content"/>
+            </basic>
+            <basic name="compileResult">
+                <column name="compile_result"/>
+            </basic>
+            <basic name="isLastOpened">
+                <column name="is_last_opened" precision="1"/>
+            </basic>
+        </attributes>
+    </entity>
+    <entity class="net.ahramionok.model.User">
+        <table name="user" schema="brainfuckide" catalog=""/>
+        <attributes>
+            <id name="idUser">
+                <column name="id_user" precision="10"/>
+            </id>
+            <basic name="password">
+                <column name="password" length="50"/>
+            </basic>
+            <basic name="email">
+                <column name="email" length="50"/>
+            </basic>
+            <basic name="username">
+                <column name="username" length="50"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
