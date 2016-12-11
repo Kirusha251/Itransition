@@ -1,3 +1,6 @@
-<h1>
-  {{title}}
-</h1>
+<h2>{{selectedProject.projectName}} details!</h2>
+<ul class="projects">
+  <li *ngFor="let project of projects" (click)="onSelect(project)">
+    <span class="badge">{{project.id_Project}}</span>{{project.projectName}}
+  </li>
+</ul>
