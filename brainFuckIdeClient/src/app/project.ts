@@ -1,8 +1,19 @@
 export class Project {
-    id_Project: number;
-    id_User: number;
+    idProject: number;
+    idUser: number;
     projectName: string;
     projectContent: string;
     compileResult: string;
-    isLastOpene: boolean;
+    isLastOpened: boolean;
+
+
+    constructor(idProject: number, idUser: number, projectName: string,
+     projectContent: string, compileResult: string, isLastOpened: boolean ){
+        this.idProject = idProject;
+        this.idUser = idUser;
+        this.projectName = projectName;
+        this.projectContent = projectContent;
+        this.compileResult = compileResult;
+        this.isLastOpened = isLastOpened;     
+    }
 }

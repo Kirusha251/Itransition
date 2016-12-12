@@ -1,0 +1,12 @@
+<div class="col-lg-1">
+  <ul class="projects">
+  <li>
+    <span class = "badge" class = "glyphicon glyphicon-file">New</span>
+  </li>
+  <li *ngFor="let project of projects"
+  [class.selected]="project === selectedProject"
+  (click)="onSelect(project)">
+  <span class = "badge" class = "glyphicon glyphicon-file"></span>{{project.projectName}}
+  </li>
+  </ul> 
+</div>

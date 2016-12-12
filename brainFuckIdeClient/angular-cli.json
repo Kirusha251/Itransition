@@ -1,7 +1,7 @@
 {
   "project": {
     "version": "1.0.0-beta.22-1",
-    "name": "brain-fuck-ide-client"
+    "name": "brain-fuck-ideclient"
   },
   "apps": [
     {
@@ -18,7 +18,8 @@
       "prefix": "app",
       "mobile": false,
       "styles": [
-        "styles.css"
+        "styles.css",
+        "../node_modules/bootstrap/dist/css/bootstrap.min.css"
       ],
       "scripts": [],
       "environments": {

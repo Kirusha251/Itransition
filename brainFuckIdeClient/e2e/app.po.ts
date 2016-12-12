@@ -1,6 +1,6 @@
 import { browser, element, by } from 'protractor';
 
-export class BrainFuckIdeClientPage {
+export class BrainFuckIDEClientPage {
   navigateTo() {
     return browser.get('/');
   }

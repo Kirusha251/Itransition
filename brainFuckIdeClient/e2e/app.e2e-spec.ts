@@ -1,10 +1,10 @@
-import { BrainFuckIdeClientPage } from './app.po';
+import { BrainFuckIDEClientPage } from './app.po';
 
-describe('brain-fuck-ide-client App', function() {
-  let page: BrainFuckIdeClientPage;
+describe('brain-fuck-ideclient App', function() {
+  let page: BrainFuckIDEClientPage;
 
   beforeEach(() => {
-    page = new BrainFuckIdeClientPage();
+    page = new BrainFuckIDEClientPage();
   });
 
   it('should display message saying app works', () => {
