@@ -4,11 +4,12 @@ package net.ahramionok.model;
  * @author Kirill Achramionok
  */
 public class CompileResult {
-    private String date;
-    private String compileResult;
     private int idProject;
+    private String compileResult;
+    private String date;
 
-    public CompileResult(String date, String compileResult, int idProject) {
+
+    public CompileResult(int idProject, String date, String compileResult) {
         this.date = date;
         this.compileResult = compileResult;
         this.idProject = idProject;

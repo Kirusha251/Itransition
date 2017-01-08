@@ -1,0 +1,47 @@
+.textarea {
+    background-color:black;color:white;
+    margin-top:50px;
+    border-radius: 5px;
+    resize: none;
+    width: 30%;
+    height: 50%;
+
+}
+.memoryarea{
+    background-color:black;color:white;
+    position: relative;
+    border-radius: 5px;
+    resize: none;
+    width: 30%;
+    height: 30%;
+    margin-bottom: 14.62%;
+    
+}
+.currentPosition{
+    background-color: yellow;
+    font-size: 18pt;
+}
+.navbar {
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 20px;
+    margin-top: -15px;
+    margin-bottom: -47px;
+}
+
+.container {
+    
+    height: 10%;
+    width: 90%;
+}
+
+.output {
+    background-color:black;color:white;
+    margin-top:-3px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+    width: 30%;
+    height: 50%;
+    resize: none;
+}

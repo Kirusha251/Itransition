@@ -1,0 +1,32 @@
+.textarea {
+    background-color:black;color:white;
+    margin-top:50px;
+    margin-right: 20%;
+    border-radius: 5px;
+    resize: none;
+    width: 60%;
+    height: 50%;
+
+}
+
+.navbar {
+    margin-left: 25%;
+    margin-right: 25%;
+    height: 20px;
+    margin-top: -15px;
+    margin-bottom: -47px;
+}
+
+.container {
+    margin-left: 15%;
+}
+
+.output {
+    background-color:black;color:white;
+    margin-top:-3px;
+    margin-left: 20%;
+    margin-right: 20%;
+    border-radius: 5px;
+    width: 60%;
+    height: 50%;
+}

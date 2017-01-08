@@ -4,6 +4,7 @@ import net.ahramionok.model.Project;
 import net.ahramionok.service.ProjectService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
+import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
@@ -42,15 +43,18 @@ public class ProjectController {
     public Project findByIdProject(@PathVariable String idProject){
         return projectService.findByIdProject(Integer.valueOf(idProject));
     }
-
-    @RequestMapping(value = "/project/{idProject}", method = RequestMethod.DELETE)
-    public Collection<Project> deleteByIdProject(@PathVariable String idProject){
+    @CrossOrigin
+    @RequestMapping(value = "/project/delete/{idProject}", method = RequestMethod.DELETE)
+    public Collection<Project> deleteByIdProject(@PathVariable("idProject") String idProject){
         projectService.deleteByIdProject(Integer.valueOf(idProject));
         return projectService.findAll();
     }
 
-    @RequestMapping(value = "/project/save")
-    public Collection<Project> save(@PathVariable String project){
+    @CrossOrigin
+    @RequestMapping(value = "/project/save-project", method = RequestMethod.PUT)
+    public Collection<Project> saveProject(@RequestBody Project project){
+        System.out.println("100 хуев");
+        projectService.save(project);
         return projectService.findAll();
     }
 
@@ -59,8 +63,11 @@ public class ProjectController {
         return projectService.findByIdUser(Integer.valueOf(user));
     }
 
-    @RequestMapping(value = "/project/update")
+    @RequestMapping(value = "/project/update", method = RequestMethod.POST,
+            produces = MediaType.APPLICATION_JSON_VALUE,
+            consumes = MediaType.APPLICATION_JSON_VALUE)
     public Project updateProject(@RequestBody Project project){
+
         projectService.update(project.getIdProject(),project.getProjectContent());
         return projectService.findByIdProject(project.getIdProject());
     }

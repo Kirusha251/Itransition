@@ -1,9 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit , Input, Output, EventEmitter } from '@angular/core';
 import {Project} from '../Project';
 import { ProjectService } from '../project.service';
-
-
-
 
 @Component({
   selector: 'app-nav-bar',
@@ -12,17 +9,21 @@ import { ProjectService } from '../project.service';
   providers:[ProjectService]
 })
 export class NavBarComponent implements OnInit {
-  selectedProject:Project;
+  @Input() selectedProject:Project;
+  
   projects: Project [] = [];
+    
   onSelect(project: Project){
     this.selectedProject = project;
+    
   }
   constructor(private projectService: ProjectService) { }
 
+  
   ngOnInit(): void {
     this.projectService.getProjects()
                        .subscribe(allprojects=> this.projects = allprojects);   
-                              
+                        
   }
 
 }

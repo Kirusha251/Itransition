@@ -1,0 +1,37 @@
+<div class="col-lg-1">
+  <ul class="projects">
+  <li>
+    <span class = "badge" class = "glyphicon glyphicon-file" data-toggle="modal" data-target="#myModal">New +</span>
+  </li>
+  <li *ngFor="let project of projects"
+  [class.selected]="project === selectedProject"
+  (click)="onSelect(project)">
+  <span class = "badge" class = "glyphicon glyphicon-file" ></span>{{project.projectName}} 
+  </li>
+  </ul> 
+</div>
+<div>
+</div>
+<app-content (projectDeleted)="projectDeleted($event)" [currentProject] = "selectedProject" [currentContent] = "currentContent" ></app-content>
+
+
+
+<div id="myModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+
+    <!-- Modal content-->
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Add Project</h4>
+      </div>
+      <div class="modal-body">
+        <input type="text" placeholder="Project name" [(ngModel)]="newProject">
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal" (click)="onAddButtonClick()">Add</button>
+      </div>
+    </div>
+
+  </div>
+</div>

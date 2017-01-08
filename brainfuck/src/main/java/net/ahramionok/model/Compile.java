@@ -3,7 +3,7 @@ package net.ahramionok.model;
 /**
  * @author Kirill Achramionok
  */
-public class Compile {
+public class  Compile {
     private int idProject;
     private String content;
     private String date;
@@ -32,12 +32,6 @@ public class Compile {
         this.date = date;
     }
 
-    public Compile(int idProject, String content, String date) {
-
-        this.idProject = idProject;
-        this.content = content;
-        this.date = date;
-    }
 
     public Compile() {
 

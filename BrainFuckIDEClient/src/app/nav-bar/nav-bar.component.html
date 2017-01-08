@@ -1,7 +1,7 @@
 <div class="col-lg-1">
   <ul class="projects">
   <li>
-    <span class = "badge" class = "glyphicon glyphicon-file">New</span>
+    <span class = "badge" class = "glyphicon glyphicon-file">New +</span>
   </li>
   <li *ngFor="let project of projects"
   [class.selected]="project === selectedProject"
@@ -10,3 +10,8 @@
   </li>
   </ul> 
 </div>
+<div>
+</div>
+<app-content></app-content>
+
+

@@ -1,0 +1,12 @@
+Task5.ImageAdapter, Task5;md590e5a6f2fb5e3d7e91e1381d95cada9c.ImageAdapter
+Task5.ImageAdapter, Task5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md590e5a6f2fb5e3d7e91e1381d95cada9c.ImageAdapter
+Task5.ImageAdapter;md590e5a6f2fb5e3d7e91e1381d95cada9c.ImageAdapter
+task5.ImageAdapter;md590e5a6f2fb5e3d7e91e1381d95cada9c.ImageAdapter
+Task5.MainActivity, Task5;md590e5a6f2fb5e3d7e91e1381d95cada9c.MainActivity
+Task5.MainActivity, Task5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md590e5a6f2fb5e3d7e91e1381d95cada9c.MainActivity
+Task5.MainActivity;md590e5a6f2fb5e3d7e91e1381d95cada9c.MainActivity
+task5.MainActivity;md590e5a6f2fb5e3d7e91e1381d95cada9c.MainActivity
+Task5.SessionActivity, Task5;md590e5a6f2fb5e3d7e91e1381d95cada9c.SessionActivity
+Task5.SessionActivity, Task5, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null;md590e5a6f2fb5e3d7e91e1381d95cada9c.SessionActivity
+Task5.SessionActivity;md590e5a6f2fb5e3d7e91e1381d95cada9c.SessionActivity
+task5.SessionActivity;md590e5a6f2fb5e3d7e91e1381d95cada9c.SessionActivity

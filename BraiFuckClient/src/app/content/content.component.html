@@ -1,0 +1,24 @@
+<div>
+    <nav class="navbar navbar navbar-inverse">
+        <div class="container">
+            <button class="btn btn-success navbar-btn" (click)="onCompileButtonClick()">Run</button>
+            <button class="btn btn-success navbar-btn" (click)="onDebugButtonClick()">Debug</button>
+            <button class="btn btn-info navbar-btn" (click) = " onBreakPointButtonClick()">With Break Point</button> 
+            <button class="btn btn-danger navbar-btn" (click) = "onStopButtonClick()">Stop</button> 
+            <button class="btn btn-info navbar-btn" (click) = "onNextStepButtonClick()">Next Step</button> 
+            <button class="btn btn-warning navbar-btn" (click) = "onUpdateButtonClick()">Save</button>
+            <button class="btn btn-warning navbar-btn" (click) = "onDeleteButtonClick()">Delete</button>            
+        </div>
+    </nav>             
+                
+    <div class="form-inline">
+        <textarea rows="15" title="Input Field:" class="textarea" [(ngModel)] = "currentContent"></textarea>
+        <textarea rows="5" class="memoryarea" [(ngModel)]="memoryOutPut" (ngModelChange)="valueChange($event)"></textarea>
+        
+    </div>
+    
+    <div>
+        <textarea rows="7" class="output" [(ngModel)]="outPutString"></textarea>
+    </div>
+
+</div>

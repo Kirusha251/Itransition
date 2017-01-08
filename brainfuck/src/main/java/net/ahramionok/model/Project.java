@@ -1,9 +1,6 @@
 package net.ahramionok.model;
 
-import javax.persistence.Basic;
-import javax.persistence.Column;
-import javax.persistence.Entity;
-import javax.persistence.Id;
+import javax.persistence.*;
 import java.io.Serializable;
 
 /**
@@ -19,6 +16,7 @@ public class Project implements Serializable {
     private byte isLastOpened;
 
     @Id
+    //@GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_project", nullable = false)
     public int getIdProject() {
         return idProject;
