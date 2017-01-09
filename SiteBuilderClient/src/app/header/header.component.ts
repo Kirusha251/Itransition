@@ -29,14 +29,10 @@ export class HeaderComponent implements OnInit {
   
   onSubmitButtonClick(){
       this.AuthenticationService.login(this.email,this.password)
-      .subscribe((result: Authentication) => {
-          if(new Boolean(result.isAuthenticate)){
-            this.isLogin = true;
-            console.log("login ok")
-          }
-          else{
-            console.log('UserName or password is incorrect!');
-          }
+      .subscribe((result)=>{
+        if(result){
+          console.log("loggin, 100 hyev");
+        }
       });
   }
   onSaveButtonClick(){
