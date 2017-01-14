@@ -6,23 +6,14 @@ package net.ahramionok.model;
 public class Authentication {
     String email;
     String password;
-    boolean isAuthenticate;
 
-    public boolean isAuthenticate() {
-        return isAuthenticate;
-    }
-
-    public void setAuthenticate(boolean authenticate) {
-        isAuthenticate = authenticate;
-    }
 
     public Authentication() {
     }
 
-    public Authentication(String email, String password, boolean isAuthenticate) {
+    public Authentication(String email, String password) {
         this.email = email;
         this.password = password;
-        this.isAuthenticate = isAuthenticate;
     }
 
     public String getEmail() {

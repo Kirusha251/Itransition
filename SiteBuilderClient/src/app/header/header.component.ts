@@ -1,8 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import {UserService} from  '../user.service';
 import {AuthenticationService} from '../authentication.service';
-import {Authentication} from '../authentication';
+import { Routes, RouterModule }  from '@angular/router';
 import {User} from '../User';
+
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
@@ -28,11 +29,12 @@ export class HeaderComponent implements OnInit {
   }
   
   onSubmitButtonClick(){
-      this.AuthenticationService.login(this.email,this.password)
+      this.AuthenticationService.login(this.userName,this.password)
       .subscribe((result)=>{
         if(result){
           console.log("loggin, 100 hyev");
         }
+      },(err:any) =>{console.log("govno"+err.status);
       });
   }
   onSaveButtonClick(){
